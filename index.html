@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baobab Logistic Group - Livraison Express à Dakar</title>
+
+    <!-- 🔤 Police et icônes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- 🎨 Feuille de style principale -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 🌍 Barre de navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/baobab.png" alt="Logo Baobab Logistic">
+                Baobab Logistic
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" onclick="closeMenu()">Accueil</a></li>
+                <li><a href="#about" onclick="closeMenu()">À Propos</a></li>
+                <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                <li><a href="#zone" onclick="closeMenu()">Zone</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 🏠 Section d'accueil (Hero) -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Votre colis urgent ? Ne paniquez plus !</h1>
+            <p class="slogan">Livraison express, sécurité garantie, service fiable.</p>
+            <p class="subtitle">Le Baobab Logistic Group redéfinit les standards de la logistique à Dakar et dans toute l'Afrique.</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/221781098693" class="btn btn-primary" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Commandez sur WhatsApp
+                </a>
+                <a href="#services" class="btn btn-secondary">
+                    <i class="fas fa-box"></i> Découvrir nos services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ℹ️ Section À propos -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>À Propos de Nous</h2>
+                <p>Une vision forte, un engagement total</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/logo.png" alt="Logo Baobab">
+                </div>
+                <div class="about-text">
+                    <h3>Notre Mission</h3>
+                    <p>C'est avec une grande fierté que nous annonçons le lancement officiel de <strong>Baobab Logistic Group</strong>, une entreprise ambitieuse dont la mission est de redéfinir les standards de la logistique en Afrique et au-delà.</p>
+                    <p>Inspiré par le <strong>Baobab</strong>, symbole de force et de lien, notre groupe veut bâtir un écosystème logistique innovant qui connecte les communautés, soutient les entreprises et facilite la vie quotidienne.</p>
+
+                    <div class="about-values">
+                        <div class="value-item"><i class="fas fa-bolt"></i><h4>Rapidité</h4></div>
+                        <div class="value-item"><i class="fas fa-shield-alt"></i><h4>Sécurité</h4></div>
+                        <div class="value-item"><i class="fas fa-handshake"></i><h4>Fiabilité</h4></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🚚 Section Services -->
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos Services</h2>
+                <p>Des solutions adaptées à tous vos besoins</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card"><i class="fas fa-motorcycle"></i><h3>Livraison Express</h3><p>Livraison en moins de 2 heures à Dakar.</p></div>
+                <div class="service-card"><i class="fas fa-calendar-alt"></i><h3>Livraison Programmée</h3><p>Planifiez vos livraisons selon votre emploi du temps.</p></div>
+                <div class="service-card"><i class="fas fa-shopping-cart"></i><h3>Livraison E-commerce</h3><p>Gestion des commandes et retours simplifiée.</p></div>
+                <div class="service-card"><i class="fas fa-cogs"></i><h3>Solution Sur Mesure</h3><p>Services personnalisés pour les entreprises.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📍 Zone d'intervention -->
+    <section id="zone">
+        <div class="container">
+            <div class="section-title">
+                <h2>Zone d'Intervention</h2>
+                <p>Nous couvrons Dakar et ses environs</p>
+            </div>
+
+            <div class="zone-content">
+                <!-- 🗺️ Carte Google Maps intégrée -->
+                <div class="map-container">
+                    <!-- Carte Google Maps centrée sur Dakar -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15435.056297297612!2d-17.4542548!3d14.6927785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172e9e4b24df9%3A0x33cfa62f247fef3a!2sDakar!5e0!3m2!1sfr!2ssn!4v1697044867449!5m2!1sfr!2ssn"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <!-- 📝 Infos zones couvertes -->
+                <div class="map-info">
+                    <h3>Nos Zones de Couverture</h3>
+                    <ul class="coverage-list">
+                        <li><i class="fas fa-check-circle"></i> Dakar Plateau</li>
+                        <li><i class="fas fa-check-circle"></i> Almadies</li>
+                        <li><i class="fas fa-check-circle"></i> Mermoz</li>
+                        <li><i class="fas fa-check-circle"></i> Ouakam</li>
+                        <li><i class="fas fa-check-circle"></i> Fann</li>
+                        <li><i class="fas fa-check-circle"></i> Liberté 6</li>
+                        <li><i class="fas fa-check-circle"></i> Sacré-Cœur</li>
+                        <li><i class="fas fa-check-circle"></i> Point E</li>
+                        <li><i class="fas fa-check-circle"></i> Parcelles Assainies</li>
+                        <li><i class="fas fa-check-circle"></i> Et bien plus...</li>
+                    </ul>
+                    <p style="margin-top: 20px; opacity: 0.9;">Extension progressive vers toute la région de Dakar et au-delà.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contactez-Nous</h2>
+                <p>Nous sommes à votre écoute</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Parlons de votre projet</h3>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+221 78 109 86 93</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@baobablogistic.sn</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Dakar, Sénégal</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horaires</h4>
+                            <p>Lun - Sam : 8h - 20h</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/221781098693" class="whatsapp-float" target="_blank" title="Contactez-nous sur WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo" style="color: var(--primary-orange); margin-bottom: 20px;">
+                    <i class="fas fa-tree"></i>
+                    Baobab Logistic
+                </div>
+                <p>Redéfinir les standards de la logistique en Afrique avec force, rapidité et fiabilité.</p>
+                <div class="social-links" style="margin-top: 20px;">
+                    <a href="https://web.facebook.com/profile.php?id=61581137125577&locale=fr_FR" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/baobab_log_group_sn/" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/baobab-logistic-group-sn/posts/?feedView=all" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/221781098693" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#about">À Propos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#zone">Zone d'intervention</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#services">Livraison Express</a></li>
+                    <li><a href="#services">Livraison Programmée</a></li>
+                    <li><a href="#services">Livraison E-commerce</a></li>
+                    <li><a href="#services">Solution Sur Mesure</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul class="footer-links">
+                    <li><i class="fab fa-whatsapp"></i> +221 78 109 86 93</li>
+                    <li><i class="fas fa-envelope"></i> contact@baobablogistic.sn</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Dakar, Sénégal</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Baobab Logistic Group. Tous droits réservés. | Conçu avec <i class="fas fa-heart" style="color: var(--primary-orange);"></i> au Sénégal</p>
+        </div>
+    </footer>
+
+    <script src="script.js"> </script>
+        
+</body>
+</html>
