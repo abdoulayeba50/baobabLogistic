@@ -49,23 +49,41 @@ nav.scrolled {
 }
 
 /* === LOGO === */
+/* === LOGO NAVBAR === */
 .logo {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     color: var(--primary-orange);
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 .logo img {
-    height: 70px;          /* ✅ taille contrôlée du logo */
-    width: auto;           /* conserve les proportions */
-    object-fit: contain;   /* évite toute déformation */
-    margin-right: -10px;    /* espace entre logo et texte */
-    margin-right: -20px; 
-    margin-top: -15px;
+    height: 45px;          /* taille standard sur desktop */
+    width: auto;
+    object-fit: contain;
+    margin-right: 5px;
+    transition: all 0.3s ease;
 }
+
+/* ✅ Logo plus grand et centré sur mobile */
+@media (max-width: 768px) {
+    .logo img {
+        height: 55px;      /* agrandi le logo */
+        margin-right: 8px; /* espace léger avec le texte */
+    }
+
+    .logo {
+        font-size: 20px;   /* le texte garde un bon équilibre */
+        justify-content: center;
+    }
+
+    .nav-container {
+        padding: 15px 20px;
+    }
+}
+
 
 /* === NAV LINKS === */
 .nav-links {
