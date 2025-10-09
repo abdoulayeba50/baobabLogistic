@@ -109,3 +109,24 @@
                 document.body.style.opacity = '1';
             }, 100);
         });
+
+
+        // <-------------------------------------------------------------------------------------->
+
+  // Ouvrir l'image en plein écran
+  const flyers = document.querySelectorAll(".flyers-grid img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = lightbox.querySelector("img");
+
+  flyers.forEach(img => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.style.display = "flex";
+    });
+  });
+
+  // Fermer le lightbox quand on clique dessus
+  lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+  });
+
